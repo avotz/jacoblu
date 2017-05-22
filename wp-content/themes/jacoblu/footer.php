@@ -10,7 +10,7 @@
  */
 
 ?>
-<?php if ( !is_home() && ! is_front_page() ) : ?>
+<?php /*if ( !is_home() && ! is_front_page() ) :*/ ?>
 	
 
 <section class="section-contact">
@@ -38,7 +38,7 @@
 				<div class="footer-address">
 					<h3>Location</h3>
 					<address>
-						<b>Jaco Blu Beach Club</b><br>
+						
 						Del Parque Central de Jaco, 100m N, 100m O.<br>
 						Jaco, Costa Rica
 					</address>
@@ -47,7 +47,7 @@
               		<a href="http://maps.google.com/?saddr=Current+Location&daddr=Jacó+Blu+Beach+Club" target="_blank" class="btn-app"><i class="fa fa-map-marker"></i> <strong>Abir en Google Maps</strong></a>
 				</div>
 				<div class="footer-copyright">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo"><img src="<?php echo get_template_directory_uri();  ?>/img/logo.png" alt="Jaco blu" /></a><br>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo"><img src="<?php echo get_template_directory_uri();  ?>/img/logo.png" alt="Jaco blu" /></a>
 					<span>Copyright &copy; 2017. Avotz</span>
 				</div>
 			
@@ -55,7 +55,7 @@
 		</div>
 
 	</footer>
-<?php endif  ?>
+<?php /*endif */ ?>
 	<!-- <div class="float-form">
 		<div class="float-form-header">
 			<div class="float-form-header-bg"></div>

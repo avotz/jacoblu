@@ -187,6 +187,13 @@ textarea
 	
 	/*.inner
 		position relative*/
+	&.banner-section
+		.item 
+			&-info
+				bottom auto
+				left auto
+				transform translate(0, -50%)
+				background-color transparent
 	.item 
 		background-size cover
 		background-repeat no-repeat
@@ -203,10 +210,15 @@ textarea
 			background-color rgba(0,0,0,.15)
 		&-info
 			position absolute
-			top 50%
-			transform translate(0, -50%)
-			color white
+			bottom 0
+			left 0
+			right 0
+			//transform translate(0, -50%)
+			color #000
 			z-index	2
+			text-align center
+			background-color rgba(white, .75)
+			
 			&.txt-center
 				left 0
 				right 0
@@ -219,13 +231,14 @@ textarea
 				font-weight 900
 				line-height 3.5rem
 				position relative
+				color naranja
 				//text-shadow 1px 1px 2px rgba(0,0,0,.75)
 				
 				&:first-child
 					padding-top .8rem
 					&:before
 						position absolute
-						display block
+						display none
 						content ""
 						//width 60px
 						//height 4px
@@ -273,7 +286,7 @@ textarea
 		position absolute
 		left 0
 		right 0
-		bottom 95px
+		bottom 195px
 		z-index 901
 		.owl-dot
 			display inline-block
@@ -293,7 +306,7 @@ textarea
 	.owl-prev
 	.owl-next
 		position absolute
-		top 86%
+		top 76%
 		transform translate(0, -50%)
 		font-family: 'icomoon' !important;
 		color white
@@ -315,8 +328,8 @@ textarea
 	.banner
 		.item 
 			&-info
-				right 5rem
-				max-width 600px
+				//right 5rem
+				//max-width 600px
 				h1
 					font-size 4rem
 				p
@@ -411,6 +424,7 @@ textarea
 		display flex
 		flex-wrap wrap
 		justify-content space-between
+		margin-bottom 1rem
 		.page
 			width 100%
 	&-map
@@ -487,12 +501,20 @@ textarea
 	.gallery-item
 		height 200px
 		overflow hidden
+.galleryid-41
+	justify-content start
+	.gallery-item
+		height 364px
+		max-width 520px
 #jp-carousel-comment-form-container
 .jp-carousel-image-meta
 	display none !important
 #wpcf7-f69-p67-o1
 	margin 0 auto
 	max-width 600px
+#ai1ec-container 
+	padding-bottom: 3rem
+
 .boxes-top
 	background-image url(./img/events.jpg);
 	background-size cover
@@ -684,10 +706,11 @@ textarea
 			color celeste
 			padding-right 1rem
 .footer
-	padding-top 2.5rem
 	padding-bottom 2.5rem
 	text-align center
 	position relative
+	&-logo 
+		display none
 	&-items
 		display flex
 		flex-wrap wrap 
@@ -696,6 +719,8 @@ textarea
 	&-social
 		width 100%
 		margin-bottom 1rem
+		h3 
+			display none
 		&-item 
 			color naranja
 			padding .5rem
@@ -703,6 +728,8 @@ textarea
 	&-address
 		margin-bottom 1rem
 		width 100%
+		h3 
+			display none
 	&-copyright
 		width 100%
 		margin-bottom 1rem
@@ -713,7 +740,16 @@ textarea
 	.btn-app
 		color celeste
 		margin 0 .5rem
-
+@media screen and (min-width: 768px)
+	.footer
+		&-logo 
+			display block
+		&-social
+		&-copyright
+		&-address
+			h3 
+				display block
+			
 @media screen and (min-width: 900px)			
 	.footer
 		padding-top 2.5rem
@@ -735,7 +771,10 @@ textarea
 .home
 	.entry-title
 		text-align center
+	.section-contact
+		display none
 .section-contact
+	display none
 	background-image url('./img/sds.jpg')
 	background-position bottom center
 	background-size cover
@@ -753,7 +792,9 @@ textarea
 		top 0
 		bottom 0
 		position absolute	
-
+@media screen and (min-width: 768px)
+	.section-contact
+		display block
 @media screen and (min-width: 1368px)
 	.section-contact
 		padding 9rem 0
