@@ -925,6 +925,9 @@ textarea {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+body.home .header-container {
+  padding: 40px 20px 15px 20px;
+}
 .header {
   position: fixed;
   left: 0;
@@ -958,7 +961,7 @@ textarea {
 }
 .header-container {
   position: relative;
-  padding: 40px 20px 15px 20px;
+  padding: 10px 20px 15px 20px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
