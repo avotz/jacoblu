@@ -1211,6 +1211,7 @@ textarea {
   .banner .item-info h1,
   .banner .item-info h2 {
     font-size: 4rem;
+    padding-bottom: 2rem;
   }
   .banner .item-info p {
     font-size: 1.5rem;
