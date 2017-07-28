@@ -1036,14 +1036,15 @@ textarea {
 }
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   position: relative;
 /*.inner
 		position relative*/
 }
 .banner.banner-section .item-info {
   bottom: auto;
-  left: auto;
+  left: 0;
+  top: 60%;
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
@@ -1057,7 +1058,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 100vh;
+  height: 50vh;
 }
 .banner .item:after {
   position: absolute;
@@ -1070,13 +1071,17 @@ textarea {
 }
 .banner .item-info {
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: 0;
   right: 0;
-  color: #000;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
   z-index: 2;
   text-align: center;
-  background-color: rgba(255,255,255,0.75);
 }
 .banner .item-info.txt-center {
   left: 0;
@@ -1090,7 +1095,8 @@ textarea {
   font-weight: 900;
   line-height: 3.5rem;
   position: relative;
-  color: #ff730b;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
 }
 .banner .item-info span:first-child {
   padding-top: 0.8rem;
@@ -1107,15 +1113,17 @@ textarea {
   border-right: 3px solid transparent;
   border-bottom: 10px solid #ff730b;
 }
-.banner .item-info h1 {
+.banner .item-info h1,
+.banner .item-info h2 {
   text-transform: uppercase;
   font-size: 3rem;
   color: #fff;
   margin-bottom: 1rem;
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
-.banner .item-info h1:before {
+.banner .item-info h1:before,
+.banner .item-info h2:before {
   position: absolute;
   display: block;
   content: "";
@@ -1139,7 +1147,7 @@ textarea {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 195px;
+  bottom: 1rem;
   z-index: 901;
 }
 .banner .owl-dots .owl-dot {
@@ -1190,7 +1198,12 @@ textarea {
   filter: none;
 }
 @media screen and (min-width: 768px) {
-  .banner .item-info h1 {
+  .banner .item-info {
+    left: 5rem;
+    right: auto;
+  }
+  .banner .item-info h1,
+  .banner .item-info h2 {
     font-size: 4rem;
   }
   .banner .item-info p {
@@ -1204,6 +1217,7 @@ textarea {
   }
   .banner.banner-section .item-info {
     top: 60%;
+    left: 5rem;
   }
   .banner.banner-section .item-info {
     right: auto;

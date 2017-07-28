@@ -10,7 +10,7 @@ get_header(); ?>
 	  	  <div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner1.jpg');">
 	  	  		<div class="inner">
 		  	  		<div class="item-info">
-		  	  			<span >Blu Lifestyle</span>
+		  	  			<h2 >Blu Lifestyle</h2>
 		  	  			<p>un lugar  ideal para los amantes del Sol y viajeros activos, con playas de arena volcánica color canela, frondosas selvas tropicales verdes y montañas con vegetación.</p>
 		  	  			
 		  	  		</div>
@@ -21,7 +21,7 @@ get_header(); ?>
 	  	  <div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner-sun.jpg');">
 	  	  		<div class="inner">
 		  	  		<div class="item-info">
-		  	  			<span >Sun</span>
+		  	  			<h2 >Sun</h2>
 		  	  			
 		  	  			
 		  	  		</div>
@@ -32,7 +32,7 @@ get_header(); ?>
 	  	  <div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner-fun.jpg');">
 	  	  		<div class="inner">
 		  	  		<div class="item-info">
-		  	  			<span >Fun</span>
+		  	  			<h2 >Fun</h2>
 		  	  			
 		  	  			
 		  	  		</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 	  	  <div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner-food.jpg');">
 	  	  		<div class="inner">
 		  	  		<div class="item-info">
-		  	  			<span >Food</span>
+		  	  			<h2 >Food</h2>
 		  	  		
 		  	  			
 		  	  		</div>

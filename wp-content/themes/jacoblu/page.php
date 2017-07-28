@@ -17,21 +17,39 @@ get_header(); ?>
 		<?php if ( has_post_thumbnail() ) :
 
 	  	 	$id = get_post_thumbnail_id($post->ID);
-	  	 	$thumb_url = wp_get_attachment_image_src($id,'full', true);
+	  	 	$thumb_url = wp_get_attachment_image_src($id,'banner-mobile', true);
+				$big_url = wp_get_attachment_image_src($id,'banner-thumb', true);
 	  	 	?>
 	    	
-			
-			<div class="item" style="background-image: url('<?php echo $thumb_url[0] ?>');">
-	  	  		<div class="inner">
-		  	  		<div class="item-info">
-		  	  			<span ><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></span>
-		  	  			
-		  	  			
-		  	  		</div>
-		  	  		
-		  	  		
-		  	  	</div>
-	  	  	</div>
+		
+	                  
+	          <?php  if(wp_is_mobile()){ ?>
+	              <div class="item" style="background-image: url('<?php echo $thumb_url[0] ?>');">
+										<div class="inner">
+											<div class="item-info">
+												<span ><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></span>
+												
+												
+											</div>
+											
+											
+										</div>
+									</div>
+
+					<?php  }else{ ?>
+								<div class="item" style="background-image: url('<?php echo $big_url[0] ?>');">
+									<div class="inner">
+										<div class="item-info">
+											<span ><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></span>
+											
+											
+										</div>
+										
+										
+									</div>
+								</div>
+	          <?php } ?>
+		
 		<?php else : ?>
 
 			<div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/section-banner.jpg');">
@@ -47,6 +65,7 @@ get_header(); ?>
 	  	  	</div>
 
 		<?php endif; ?>
+
 
 		
 	  	  

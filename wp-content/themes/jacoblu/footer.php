@@ -13,11 +13,11 @@
 <?php /*if ( !is_home() && ! is_front_page() ) :*/ ?>
 	
 
-<section class="section-contact">
+<!-- <section class="section-contact">
 		<div class="inner">
-			<!-- <a href="#" class="btn">Discover Us</a> -->
+			<a href="#" class="btn">Discover Us</a>
 		</div>
-	</section>
+	</section> -->
 	<footer class="footer">
 		<div class="inner">
 			<div class="footer-items">	
