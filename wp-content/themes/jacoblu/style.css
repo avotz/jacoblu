@@ -1036,10 +1036,16 @@ textarea {
 }
 .banner {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   position: relative;
 /*.inner
 		position relative*/
+}
+.banner.banner-section {
+  height: 50vh;
+}
+.banner.banner-section .item {
+  height: 50vh;
 }
 .banner.banner-section .item-info {
   bottom: auto;
@@ -1057,8 +1063,8 @@ textarea {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-  height: 50vh;
+  background-position: center center;
+  height: 100vh;
 }
 .banner .item:after {
   position: absolute;

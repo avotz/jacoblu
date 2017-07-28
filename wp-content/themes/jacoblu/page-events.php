@@ -16,7 +16,7 @@ get_header(); ?>
 		
 	                  
 	          <?php  if(wp_is_mobile()){ ?>
-	              <div class="item" style="background-image: url('<?php echo $thumb_url[0] ?>');">
+	              <div class="item" style="background-image: url('<?php echo $big_url[0] ?>');">
 										<div class="inner">
 											<div class="item-info">
 												<span ><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></span>
