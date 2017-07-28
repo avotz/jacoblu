@@ -1207,6 +1207,9 @@ body.home .header-container {
   filter: none;
 }
 @media screen and (min-width: 768px) {
+  .banner .item {
+    background-position: top center;
+  }
   .banner .item-info {
     left: 5rem;
     right: auto;
