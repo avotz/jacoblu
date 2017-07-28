@@ -1,10 +1,10 @@
 === MB Custom Post Type ===
-Contributors: metabox, rilwis, duc88b, fitwp
+Contributors: metabox, rilwis, duc88b, fitwp, truongwp
 Donate link: http://www.deluxeblogtips.com/donate
 Tags: cms, custom, custom post types, custom post type, cpt, post, post types, post type, types
 Requires at least: 4.3
-Tested up to: 4.7.3
-Stable tag: 1.3.1
+Tested up to: 4.8
+Stable tag: 1.4.1
 License: GPLv2 or later
 
 Create and manage custom post types and custom taxonomies with an easy-to-use interface in WordPress.
@@ -28,6 +28,7 @@ https://www.youtube.com/watch?v=KG_8MF9xw6E&rel=0
 * Supports all arguments for creating custom post types (like `register_post_type()`)
 * Supports all arguments for creating custom taxonomies (like `register_taxonomy()`)
 * Supports **live editing mode**, which auto fill in all necessary labels for you!
+* **Export to PHP Code** (since 1.4)
 * Clean code
 * Registered custom post types can be exported/imported using default WordPress functionality (no more plugins!)
 
@@ -60,45 +61,12 @@ Install **MB Custom Post Type** extension
 
 == Changelog ==
 
-= 1.3.1 =
-- Improvement: Add option to hide taxonomy meta box in the edit page.
+= 1.4.1 =
 
-= 1.3 =
-- Improvement: Add support for showing post types/taxonomies in REST API
+- Added "About" page to help new users use the plugin.
 
-= 1.2.5 =
+[See changelog for all versions](https://github.com/rilwis/mb-custom-post-type/blob/master/CHANGELOG.md).
 
-- Fix: Custom post types not shown when edit custom taxonomy.
-
-= 1.2.4 =
-
-- Fix: Remove undefined index notice.
-
-= 1.2.3 =
-
-- Improvement: Add new options for custom rewrite slug and with_front.
-
-= 1.2.2 =
-
-- Fix: Custom taxonomies now can be added to 'post', 'page', 'attachment'
-
-= 1.2.1 =
-
-- Fix: unable to assign only category or tags to custom post type.
-
-= 1.2.0 =
-
-- Improvement: allow custom post types to have default taxonomies: category and tags.
-
-= 1.1.0 =
-
-- Improvement: integrates with [MB Custom Taxonomy](https://wordpress.org/plugins/mb-custom-taxonomy/) to create and manage custom taxonomies with similar interface.
-
-= 1.0.2 =
-
-- Improvement: user custom code to load plugin dependency for smaller footprint
-
-= 1.0.0 =
 
 - First version
 
