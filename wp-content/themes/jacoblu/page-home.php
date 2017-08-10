@@ -29,7 +29,7 @@ get_header(); ?>
 		  	  		
 		  	  	</div>
 	  	  </div>
-	  	  <div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner-fun.jpg');">
+	  	  <div class="item" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/fun-jaco-blu.jpg');">
 	  	  		<div class="inner">
 		  	  		<div class="item-info">
 		  	  			<h2 >Fun</h2>
