@@ -2,7 +2,11 @@
  /*
     Template Name: Page Venta 
      */
+$url_parse = wp_parse_url($_SERVER['REQUEST_URI']);
 
+$segments = explode('/', $url_parse['path']);
+//var_dump($segments[2]);
+$code = $segments[2];
 
 get_header(); ?>
 	<section class="banner banner-section">
@@ -89,7 +93,11 @@ get_header(); ?>
 	</section>
 
 
+<script>
+    var el = document.querySelector("input[name='promos']");
+    el.value = '<?php echo $code; ?>';
 
+</script>
 <?php
 /*get_sidebar();*/
 get_footer();
